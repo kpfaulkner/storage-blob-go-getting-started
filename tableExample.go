@@ -18,8 +18,15 @@ import (
 // updates a row and deletes a row.
 func tableSamples(tableName string) {
 	
-	fmt.Println("Create container with private access type...")
-	cnt := blobCli.GetContainerReference(containerName)
+	fmt.Println("Create table")
+	tableRef := tableCli.GetTableReference(tableName)
+	err := tableRef.Create(30, storage.EmptyPayload, nil)
+	if err != nil {
+		onErrorFail(err, "Create table failed: If you are running with the emulator credentials, plaase make sure you have started the storage emmulator. Press the Windows key and type Azure Storage to select and run it from the list of applications - then restart the sample")
+	}
+	
+	
+	blobCli.GetContainerReference(containerName)
 	options := storage.CreateContainerOptions{
 		Access: storage.ContainerAccessTypePrivate,
 	}
