@@ -1,9 +1,10 @@
-// This package demonstrates the usage of Azure Blob Storage services using Go.
+// This package demonstrates the usage of Azure Table services using Go.
 package main
 
 import (
 	"bytes"
 	"encoding/base64"
+	"flag"
 	"fmt"
 	"io/ioutil"
 	"math/rand"
@@ -13,14 +14,10 @@ import (
 	"azure-sdk-for-go/storage" // referring to local one (dev) for now.
 )
 
-var (
-	appendBlobFile = "appendBlob.txt"
-	blockBlobFile  = "blockBlob.txt"
-	pageBlobFile   = "pageBlob.txt"
-)
-
-// blobSamples creates a container, and performs operations with page blobs, append blobs and block blobs.
-func blobSamples(containerName, pageBlobName, appendBlobName, blockBlobName string) {
+// tableSamples creates a table, populates rows, retrieved based on partition and row key,
+// updates a row and deletes a row.
+func tableSamples(tableName string) {
+	
 	fmt.Println("Create container with private access type...")
 	cnt := blobCli.GetContainerReference(containerName)
 	options := storage.CreateContainerOptions{
