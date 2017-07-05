@@ -14,8 +14,8 @@ var (
 	accountKey  string
 	emulator    *bool
 	blobCli     storage.BlobStorageClient
-	tableCli     storage.TableServiceClient
-
+	tableCli    storage.TableServiceClient
+	queueCli    storage.QueueServiceClient
 )
 
 func init() {
@@ -33,12 +33,14 @@ func init() {
 
 	blobCli = client.GetBlobService()
 	tableCli = client.GetTableService()
+	queueCli = client.GetQueueService()
 }
 
 func main() {
 	fmt.Println("Azure Storage Blob Sample")
 	blobSamples("demoblobcontainer", "demoPageBlob", "demoAppendBlob", "demoBlockBlob")
 	tableSamples("demotable")
+	queueSamples("demoqueue")
 }
 
 // getEnvVarOrExit returns the value of specified environment variable or terminates if it's not defined.
