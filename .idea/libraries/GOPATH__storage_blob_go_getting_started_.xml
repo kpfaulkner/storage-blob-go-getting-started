@@ -1,0 +1,75 @@
+<component name="libraryTable">
+  <library name="GOPATH &lt;storage-blob-go-getting-started&gt;">
+    <CLASSES>
+      <root url="file://$PROJECT_DIR$/../incrementalcopy" />
+      <root url="file://$PROJECT_DIR$/../queuetest" />
+      <root url="file://$PROJECT_DIR$/../testemptyblob" />
+      <root url="file://$PROJECT_DIR$/../azurestoragetools" />
+      <root url="file://$PROJECT_DIR$/../hw" />
+      <root url="file://$PROJECT_DIR$/../azure-storage-go - incremental master" />
+      <root url="file://$PROJECT_DIR$/../azure-sdk-for-go-merge-issue" />
+      <root url="file://$PROJECT_DIR$/../webserver" />
+      <root url="file://$PROJECT_DIR$/../tableerror" />
+      <root url="file://$PROJECT_DIR$/../azure-sdk-for-go" />
+      <root url="file://$PROJECT_DIR$/../helloworld" />
+      <root url="file://$PROJECT_DIR$/../blobsync" />
+      <root url="file://$PROJECT_DIR$/../.vscode" />
+      <root url="file://$PROJECT_DIR$/../azure-storage-go" />
+      <root url="file://$PROJECT_DIR$/../azure-storage-go-old" />
+      <root url="file://$PROJECT_DIR$/../github.com" />
+      <root url="file://$PROJECT_DIR$/../dbxcli" />
+      <root url="file://$PROJECT_DIR$/../defertest" />
+      <root url="file://$PROJECT_DIR$/../golang.org" />
+      <root url="file://$PROJECT_DIR$/../tabletest" />
+      <root url="file://$PROJECT_DIR$/../azure-sdk-for-go-old" />
+      <root url="file://$PROJECT_DIR$/../azurefunction" />
+      <root url="file://$PROJECT_DIR$/../gopkg.in" />
+      <root url="file://$PROJECT_DIR$/../mcardosos" />
+      <root url="file://$PROJECT_DIR$/../azurecopycmd" />
+      <root url="file://$PROJECT_DIR$/../blobtest" />
+      <root url="file://$PROJECT_DIR$/../chat" />
+      <root url="file://$PROJECT_DIR$/../azure-sdk-for-go--filechanges" />
+      <root url="file://$PROJECT_DIR$/../azurecopy" />
+      <root url="file://$PROJECT_DIR$/../sourcegraph.com" />
+      <root url="file://$PROJECT_DIR$/../queuebenchmark" />
+      <root url="file://$PROJECT_DIR$/../testapi" />
+    </CLASSES>
+    <SOURCES>
+      <root url="file://$PROJECT_DIR$/../incrementalcopy" />
+      <root url="file://$PROJECT_DIR$/../queuetest" />
+      <root url="file://$PROJECT_DIR$/../testemptyblob" />
+      <root url="file://$PROJECT_DIR$/../azurestoragetools" />
+      <root url="file://$PROJECT_DIR$/../hw" />
+      <root url="file://$PROJECT_DIR$/../azure-storage-go - incremental master" />
+      <root url="file://$PROJECT_DIR$/../azure-sdk-for-go-merge-issue" />
+      <root url="file://$PROJECT_DIR$/../webserver" />
+      <root url="file://$PROJECT_DIR$/../tableerror" />
+      <root url="file://$PROJECT_DIR$/../azure-sdk-for-go" />
+      <root url="file://$PROJECT_DIR$/../helloworld" />
+      <root url="file://$PROJECT_DIR$/../blobsync" />
+      <root url="file://$PROJECT_DIR$/../.vscode" />
+      <root url="file://$PROJECT_DIR$/../azure-storage-go" />
+      <root url="file://$PROJECT_DIR$/../azure-storage-go-old" />
+      <root url="file://$PROJECT_DIR$/../github.com" />
+      <root url="file://$PROJECT_DIR$/../dbxcli" />
+      <root url="file://$PROJECT_DIR$/../defertest" />
+      <root url="file://$PROJECT_DIR$/../golang.org" />
+      <root url="file://$PROJECT_DIR$/../tabletest" />
+      <root url="file://$PROJECT_DIR$/../azure-sdk-for-go-old" />
+      <root url="file://$PROJECT_DIR$/../azurefunction" />
+      <root url="file://$PROJECT_DIR$/../gopkg.in" />
+      <root url="file://$PROJECT_DIR$/../mcardosos" />
+      <root url="file://$PROJECT_DIR$/../azurecopycmd" />
+      <root url="file://$PROJECT_DIR$/../blobtest" />
+      <root url="file://$PROJECT_DIR$/../chat" />
+      <root url="file://$PROJECT_DIR$/../azure-sdk-for-go--filechanges" />
+      <root url="file://$PROJECT_DIR$/../azurecopy" />
+      <root url="file://$PROJECT_DIR$/../sourcegraph.com" />
+      <root url="file://$PROJECT_DIR$/../queuebenchmark" />
+      <root url="file://$PROJECT_DIR$/../testapi" />
+    </SOURCES>
+    <excluded>
+      <root url="file://$PROJECT_DIR$" />
+    </excluded>
+  </library>
+</component>

@@ -8,9 +8,7 @@ import (
 	"io/ioutil"
 	"math/rand"
 	"os"
-
-	// "github.com/Azure/azure-sdk-for-go/storage"
-	"azure-sdk-for-go/storage" // referring to local one (dev) for now.
+	"azure-sdk-for-go/storage"  // dev branch for now
 )
 
 var (

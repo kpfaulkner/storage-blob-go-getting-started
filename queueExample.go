@@ -4,8 +4,8 @@ package main
 import (
 	"fmt"
 	
-	// "github.com/Azure/azure-sdk-for-go/storage"
-	"azure-sdk-for-go/storage" // referring to local one (dev) for now.
+	"azure-sdk-for-go/storage"  // dev branch for now
+
 )
 
 // queueSamples creates a queue, pushes messages, pops messages
@@ -38,7 +38,6 @@ func queueSamples(queueName string) {
 	if err != nil {
 		onErrorFail(err, "deleteMessageFromQueue failed: If you are running with the emulator credentials, plaase make sure you have started the storage emmulator. Press the Windows key and type Azure Storage to select and run it from the list of applications - then restart the sample")
 	}
-
 
 	fmt.Println("Done")
 }

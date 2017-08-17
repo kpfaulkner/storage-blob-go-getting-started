@@ -4,9 +4,8 @@ package main
 import (
 	"fmt"
 	"time"
+	"azure-sdk-for-go/storage"  // dev branch for now
 
-	// "github.com/Azure/azure-sdk-for-go/storage"
-	"azure-sdk-for-go/storage" // referring to local one (dev) for now.
 )
 
 // tableSamples creates a table, populates rows, retrieved based on partition and row key,
@@ -15,7 +14,7 @@ func tableSamples(tableName string) {
 
 	fmt.Println("Create table")
 	tableRef := tableCli.GetTableReference(tableName)
-
+	
 	// delete the table first, incas it exists	
 	tableRef.Delete(30, nil)
 
@@ -44,17 +43,17 @@ func tableSamples(tableName string) {
 	fmt.Println("Done")
 }
 
+
 func addEntityToTable( table *storage.Table) error {
 	fmt.Println("Create an entity to table...")
 	
 	entity := table.GetEntityReference("partitionkey1", "rowkey1")
-	props := map[string]interface{}{
+	entity.Properties = map[string]interface{}{
 		"SomeNumber":      123,
 		"SomeString":  "some string",
 		"SomeDate":  time.Date(1992, time.December, 20, 21, 55, 0, 0, time.UTC),
 		"IsActive":       true,
 	}
-	entity.Properties = props
 	err := entity.Insert(storage.EmptyPayload, nil)
 	if err != nil {
 		return err
